@@ -46,6 +46,7 @@ Inicialmente, é necessário que cada jogador escolha cinco posições nas quais
 <img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoria%20jogador.png" alt="vitória jogador">
 <!--![vitória jogador](/imgs/vitoria%20jogador.png)-->
 </p>
+
 ## Telas do jogo (Versão 1.5):
 <p align="center">
 <img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/titulov1.png" alt="início jogador">
@@ -59,6 +60,7 @@ Inicialmente, é necessário que cada jogador escolha cinco posições nas quais
 <img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoriav1.png" alt="vitória jogador">
 <!--![vitória jogador](/imgs/vitoriav1.png)-->
 </p>
+
 ## Telas do jogo (Versão 1.0):
 <p align="center">
 <img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela0_5.png" alt="tela">
