@@ -34,33 +34,40 @@ Caso queira jogar diretamente sem a necessidade de compilar ou linkar (sem a nec
 Inicialmente, é necessário que cada jogador escolha cinco posições nas quais serão posicionadas os respectivos navios (5 escolhas seguidas para cada jogador respectivamente). Após isso, o jogo se inicia com cada jogador escolhendo sua respectiva posição para realizar o tiro.
 
 ## Telas do jogo (Versão 2.0):
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/inicio.png" alt="início">
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/inicio.png" alt="início">
 <!--![início](/imgs/inicio.png)-->
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela%20jogo.png" alt="tela jogo">
+</p>
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela%20jogo.png" alt="tela jogo">
 <!--![tela jogo](/imgs/tela%20jogo.png)-->
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoria%20jogador.png" alt="vitória jogador">
+</p>
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoria%20jogador.png" alt="vitória jogador">
 <!--![vitória jogador](/imgs/vitoria%20jogador.png)-->
-
+</p>
 ## Telas do jogo (Versão 1.5):
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/titulov1.png" alt="início jogador">
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/titulov1.png" alt="início jogador">
 <!--![início](/imgs/titulov1.png)-->
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/telav1.png" alt="tela">
+</p>
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/telav1.png" alt="tela">
 <!--![tela jogo](/imgs/telav1.png)-->
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoriav1.png" alt="vitória jogador">
+</p>
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/vitoriav1.png" alt="vitória jogador">
 <!--![vitória jogador](/imgs/vitoriav1.png)-->
-
-## Telas do jogo (Versão 0.5):
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela0_5.png" alt="tela">
+</p>
+## Telas do jogo (Versão 1.0):
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela0_5.png" alt="tela">
 <!--![tela](/imgs/tela0_5.png)-->
-
-<img align="center" src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tabuleiro0_5.png" alt="tabuleiro">
+</p>
+<p align="center">
+<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tabuleiro0_5.png" alt="tabuleiro">
 <!--![tabuleiro](/imgs/tabuleiro0_5.png)-->
+</p>
 
 ## Arquivos
 ### Versões
