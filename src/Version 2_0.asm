@@ -45,7 +45,7 @@ TITLE BATALHANAVAL
 	QUAD3  		DB 	195,196,196,196,197,196,196,196,197,196,196,196,197,196,196,196,197,196,196,196,197,196,196,196,180,"$"; CX=24
 	QUAD4 		DB 	192,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,217,"              ",192,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,193,196,196,196,217,"$"; CX=70
 	COUNT 		DB 	?
-	ONE1		DB	"  __ ",0Ah,0Dh,"$" 
+	ONE1		DB	"  __ ",0Ah,0Dh,"$"
 	ONE2		DB	" /_ |",0Ah,0Dh,"$"
 	ONE3		DB	"  | |",0Ah,0Dh,"$" ; Utiliza-se 3 vezes
 	ONE4		DB	"  |_|",0Ah,0Dh,"$"
@@ -60,18 +60,18 @@ TITLE BATALHANAVAL
 	B3 			DB 	" 	|  \$"
 	B4 			DB 	"   	|___\$"
 	B5 			DB 	"_____\--|----/______$"
-	B6 			DB 	"      \_____/$" 
-	V1 			DB 	10, 13, "__      __ _____  _______  ____   _____   _____$"           
-	V2 			DB 	10, 13, "\ \    / /|_   _||__   __|/ __ \ |  __ \ |_   _|    /\$"    
-	V3 			DB 	10, 13, " \ \  / /   | |     | |  | |  | || |__) |  | |     /  \$"   
-	V4 			DB 	10, 13, "  \ \/ /    | |     | |  | |  | ||  _  /   | |    / /\ \$"  
-	V5 			DB 	10, 13, "   \  /    _| |_    | |  | |__| || | \ \  _| |_  / ____ \$" 
+	B6 			DB 	"      \_____/$"
+	V1 			DB 	10, 13, "__      __ _____  _______  ____   _____   _____$"
+	V2 			DB 	10, 13, "\ \    / /|_   _||__   __|/ __ \ |  __ \ |_   _|    /\$"
+	V3 			DB 	10, 13, " \ \  / /   | |     | |  | |  | || |__) |  | |     /  \$"
+	V4 			DB 	10, 13, "  \ \/ /    | |     | |  | |  | ||  _  /   | |    / /\ \$"
+	V5 			DB 	10, 13, "   \  /    _| |_    | |  | |__| || | \ \  _| |_  / ____ \$"
 	V6 			DB 	10, 13, "    \/    |_____|   |_|   \____/ |_|  \_\|_____|/_/    \_\$"
-	V7 			DB 	10, 13, " _____   _             __     __ ______  _____   $"    
-	V8 			DB 	"|  __ \ | |         /\ \ \   / /|  ____||  __ \  $"   
-	V9 			DB 	"| |__) || |        /  \ \ \_/ / | |__   | |__) | $"   
-	V10 		DB 	"|  ___/ | |       / /\ \ \   /  |  __|  |  _  /  $"   
-	V11 		DB 	"| |     | |____  / ____ \ | |   | |____ | | \ \  $"   
+	V7 			DB 	10, 13, " _____   _             __     __ ______  _____   $"
+	V8 			DB 	"|  __ \ | |         /\ \ \   / /|  ____||  __ \  $"
+	V9 			DB 	"| |__) || |        /  \ \ \_/ / | |__   | |__) | $"
+	V10 		DB 	"|  ___/ | |       / /\ \ \   /  |  __|  |  _  /  $"
+	V11 		DB 	"| |     | |____  / ____ \ | |   | |____ | | \ \  $"
 	V12 		DB 	"|_|     |______|/_/    \_\|_|   |______||_|  \_\ $"
 	R1			DB	218,196,196,196,196,196,196,196,196,196,196,191,"$"
 	R2			DB	192,196,196,196,196,196,196,196,196,196,196,217,"$"
@@ -79,7 +79,7 @@ TITLE BATALHANAVAL
 	CONT1 		DB 	48 ; Contador de acertos do jogador 1
 	CONT2 		DB 	48 ; Contador de acertos do jogador 2
 	TABULEIRO1 	DB 	36 DUP (0) ;Posicao sem navio vale 0
-	TABULEIRO2 	DB 	36 DUP (0) 
+	TABULEIRO2 	DB 	36 DUP (0)
 	J1			DB	"JOGADOR 1$"
 	J2			DB	"JOGADOR 2$"
 	JOGS		DB	"JOGADAS:$"
@@ -88,7 +88,7 @@ TITLE BATALHANAVAL
 	TAB2		DB	"TABULEIRO 2$" ; CX=11
 	J1T1 		DB 	"JOGADOR 1 - TABULEIRO 1$" ; CX=23
 	J2T2 		DB 	"JOGADOR 2 - TABULEIRO 2$" ; CX=23
-	LC 			DB 	"Linha e coluna da posicao: $" ; CX=27 
+	LC 			DB 	"Linha e coluna da posicao: $" ; CX=27
 	P1			DB 	"Vez do jogador 1 - TABULEIRO 2: $" ; CX=32
 	P2 			DB 	"Vez do jogador 2 - TABULEIRO 1: $" ;CX=32
 	FAIL 		DB 	"Valor invalido! Tente novamente$" ; CX=31
@@ -123,7 +123,7 @@ INT 21H
 LEA DX, L12
 INT 21H
 
-RET 
+RET
 TITULO ENDP
 
 ;------------------------------------------------------------------------------------------
@@ -198,7 +198,7 @@ INT 21H
 LEA DX, V6
 INT 21H
 
-RET 
+RET
 WIN ENDP
 
 ;------------------------------------------------------------------------------------------
@@ -229,7 +229,7 @@ LEA DX, V12
 INT 21h
 LEA DX, ONE4
 INT 21h
-	
+
 RET
 PLA1 ENDP
 
@@ -289,30 +289,30 @@ PULALINHA ENDP
 ;------------------------------------------------------------------------------------------
 HORIZONTAL PROC
 INC DH
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD3
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67
-MOV CX, 25 
-MOV DL, 7  
-INT 10h  
+MOV CX, 25
+MOV DL, 7
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD3
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67
-MOV CX, 25 
-MOV DL, 46  
-INT 10h  
+MOV CX, 25
+MOV DL, 46
+INT 10h
 
 RET
 HORIZONTAL ENDP
 
 ;------------------------------------------------------------------------------------------
 VAZIO PROC
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUADV
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
 MOV CX, 3
 INT 10h
@@ -322,9 +322,9 @@ VAZIO ENDP
 
 ;------------------------------------------------------------------------------------------
 AGUA PROC
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUADA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67 ;COR
 MOV CX, 3
 INT 10h
@@ -334,9 +334,9 @@ AGUA ENDP
 ;------------------------------------------------------------------------------------------
 
 ACERTO PROC
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUADC
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
 MOV CX, 3
 INT 10h
@@ -360,7 +360,7 @@ EXQUAD PROC
 CALL LIMPATELA
 
 XOR SI, SI
-	
+
 MOV AH, 13h ;Numeros
 MOV BP, OFFSET QUAD ; ponteiro para a posição da string na memória
 MOV BH, 5 ; nº da página
@@ -368,34 +368,34 @@ MOV BL, 1Eh ;COR
 MOV CX, 69 ; qntd de caracters
 MOV DL, 0 ;coluna
 MOV DH, 10 ;linha
-INT 10h 
+INT 10h
 
 INC DH
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
-MOV CX, 25 
-MOV DL, 7  
-INT 10h  
+MOV CX, 25
+MOV DL, 7
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
-MOV CX, 25 
-MOV DL, 46  
-INT 10h 
+MOV CX, 25
+MOV DL, 46
+INT 10h
 
 MOV AH, 13h ;Espaço vazio A
 MOV BP, OFFSET QUAD2A
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -436,17 +436,17 @@ INC DL
 
 CONTINUE1:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR1
-  
+
 MOV AH, 13h ;Espaço vazio A2
 MOV BP, OFFSET QUAD2A2
 MOV BH, 5
 MOV BL, 1EH ;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -488,20 +488,20 @@ INC DL
 
 CONTINUE2:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR2
 
 CALL HORIZONTAL
 
 MOV AH, 13h ;Espaço vazio B
 MOV BP, OFFSET QUAD2B
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -543,17 +543,17 @@ INC DL
 
 CONTINUE3:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR3
-  
+
 MOV AH, 13h ;Espaço vazio B2
 MOV BP, OFFSET QUAD2B2
 MOV BH, 5
 MOV BL, 1EH;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -595,20 +595,20 @@ INC DL
 
 CONTINUE4:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR4
 
 CALL HORIZONTAL
 
 MOV AH, 13h ;Espaço vazio C
 MOV BP, OFFSET QUAD2C
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -650,17 +650,17 @@ INC DL
 
 CONTINUE5:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR5
-  
+
 MOV AH, 13h ;Espaço vazio C2
 MOV BP, OFFSET QUAD2C2
 MOV BH, 5
 MOV BL, 1EH;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -702,20 +702,20 @@ INC DL
 
 CONTINUE6:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR6
 
 CALL HORIZONTAL
 
 MOV AH, 13h ;Espaço vazio D
 MOV BP, OFFSET QUAD2D
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -757,17 +757,17 @@ INC DL
 
 CONTINUE7:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR7
-  
+
 MOV AH, 13h ;Espaço vazio D2
 MOV BP, OFFSET QUAD2D2
 MOV BH, 5
 MOV BL, 1EH;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -809,20 +809,20 @@ INC DL
 
 CONTINUE8:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR8
 
 CALL HORIZONTAL
 
 MOV AH, 13h ;Espaço vazio E
 MOV BP, OFFSET QUAD2E
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -864,17 +864,17 @@ INC DL
 
 CONTINUE9:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR9
-  
+
 MOV AH, 13h ;Espaço vazio E2
 MOV BP, OFFSET QUAD2E2
 MOV BH, 5
 MOV BL, 1EH;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -916,20 +916,20 @@ INC DL
 
 CONTINUE10:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR10
 
 CALL HORIZONTAL
 
 MOV AH, 13h ;Espaço vazio F
 MOV BP, OFFSET QUAD2F
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 7
-MOV DL, 0 
+MOV DL, 0
 INC DH
-INT 10h 
-	 
+INT 10h
+
 MOV DL, 7
 MOV COUNT, 6
 
@@ -971,17 +971,17 @@ INC DL
 
 CONTINUE11:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR11
-  
+
 MOV AH, 13h ;Espaço vazio F2
 MOV BP, OFFSET QUAD2F2
 MOV BH, 5
 MOV BL, 1EH;COR
-MOV CX, 14 
-MOV DL, 32 
-INT 10h 
-	
+MOV CX, 14
+MOV DL, 32
+INT 10h
+
 ADD DL, 14
 MOV COUNT, 6
 
@@ -1023,206 +1023,206 @@ INC DL
 
 CONTINUE12:
 INC SI
-DEC COUNT  
+DEC COUNT
 JNZ MOSTRAR12
 
 INC DH
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD4
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
-MOV CX, 25 
-MOV DL, 7  
-INT 10h  
+MOV CX, 25
+MOV DL, 7
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET QUAD4
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 67;COR
-MOV CX, 25 
-MOV DL, 46  
-INT 10h 
+MOV CX, 25
+MOV DL, 46
+INT 10h
 
 INC DH
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET TAB1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1Eh;COR
 MOV CX, 11
-MOV DL, 13  
-INT 10h 
+MOV DL, 13
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET TAB2
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1Eh;COR
-MOV CX, 11 
-MOV DL, 52  
-INT 10h 
+MOV CX, 11
+MOV DL, 52
+INT 10h
 
 XOR SI, SI
 
-MOV AH, 13h 
-MOV BP, OFFSET R1 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET R1
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 12
 MOV DL, 10
 MOV DH, 6
 INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 10
 MOV DH, 7
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
-MOV BP, OFFSET J1 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET J1
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 9
 MOV DL, 11
 MOV DH, 7
 INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 21
 MOV DH, 7
-INT 10h  
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 10
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET ACERTS
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 8
 MOV DL, 11
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET CONT1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 20
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 21
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET R2
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 12
 MOV DL, 10
 MOV DH, 9
 INT 10h
 
-MOV AH, 13h 
-MOV BP, OFFSET R1 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET R1
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 12
 MOV DL, 49
 MOV DH, 6
 INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 49
 MOV DH, 7
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
-MOV BP, OFFSET J2 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET J2
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 9
 MOV DL, 50
 MOV DH, 7
 INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 60
 MOV DH, 7
-INT 10h  
+INT 10h
 
-MOV AH, 13h 
-MOV BP, OFFSET BARRA 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET BARRA
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 49
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET ACERTS
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 8
 MOV DL, 50
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET CONT2
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 59
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET BARRA
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 1
 MOV DL, 60
 MOV DH, 8
-INT 10h 
+INT 10h
 
-MOV AH, 13h 
-MOV BP, OFFSET R2 
-MOV BH, 5 
+MOV AH, 13h
+MOV BP, OFFSET R2
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 12
 MOV DL, 49
 MOV DH, 9
-INT 10h   
+INT 10h
 
 RET
 EXQUAD ENDP
@@ -1233,9 +1233,9 @@ PUSH CX
 JMP MSG
 
 ERRO1:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET FAIL
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 31
 MOV DL, 11
@@ -1243,9 +1243,9 @@ MOV DH, 3
 INT 10h
 
 MSG:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET LC
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 27
 MOV DL, 11
@@ -1259,8 +1259,8 @@ MOV BH, 5 ; Nº pág
 INT 10h
 
 XOR BX, BX
-XOR SI, SI 
-	
+XOR SI, SI
+
 MOV AH, 7
 INT 21H
 AND AL, 11011111B
@@ -1268,13 +1268,13 @@ CMP AL, 65
 JB ERRO1
 CMP AL, 70
 JA ERRO1
-	
+
 MOV BL, AL
 SUB BL, 65
 JZ L
 
 MOV DL, BL
-XOR BL, BL  
+XOR BL, BL
 
 LINHA:
 ADD BL, 6
@@ -1291,14 +1291,14 @@ CMP AL, 54
 JA ERRO1
 
 SUB AL,49
-JZ RETURN 
+JZ RETURN
 MOV DH, AL
 
 COLUNA:
 INC BL
 DEC DH
 JNZ COLUNA
-	
+
 RETURN:
 MOV SI, BX
 
@@ -1316,7 +1316,7 @@ MOV DS, AX
 MOV ES, AX
 
 MOV AH, 0 ; Atribuir modo de vídeo
-MOV AL, 3 
+MOV AL, 3
 INT 10H
 
 CALL TSCREEN
@@ -1324,7 +1324,7 @@ CALL TSCREEN
 MOV AH, 5 ; Selecionar página ativa
 MOV AL, 5 ; Nº da página (0-7 PARA MODO 3)
 INT 10h
-	
+
 ;CALL EXQUAD
 
 ;------------------------------------------------------------------------------------------
@@ -1336,20 +1336,20 @@ PUSH CX
 
 CALL EXQUAD
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET J1T1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 23
 MOV DL, 11
 MOV DH, 1
-INT 10h 
+INT 10h
 
 JMP CONTINUA
 ERRO3:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET PE
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 37
 MOV DL, 11
@@ -1373,9 +1373,9 @@ PUSH CX
 
 CALL EXQUAD
 
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET J2T2
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 23
 MOV DL, 11
@@ -1384,9 +1384,9 @@ INT 10h
 
 JMP CONTINUA2
 ERRO4:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET PE
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 37
 MOV DL, 11
@@ -1407,9 +1407,9 @@ JOGADA:
 PLAYER1:
 CALL EXQUAD
 Y1:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET P1
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 32
 MOV DL, 11
@@ -1422,15 +1422,15 @@ CMP TABULEIRO2[SI], 2
 JAE OCUPADO1
 
 CMP TABULEIRO2[SI], 0
-JE W1 
+JE W1
 
 INC CONT1
 JMP POSICAO1
 
 OCUPADO1:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET PE
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 37
 MOV DL, 11
@@ -1453,9 +1453,9 @@ JE FIM1
 PLAYER2:
 CALL EXQUAD
 Y2:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET P2
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 32
 MOV DL, 11
@@ -1468,15 +1468,15 @@ CMP TABULEIRO1[SI], 2
 JAE OCUPADO2
 
 CMP TABULEIRO1[SI], 0
-JE W2 
+JE W2
 
 INC CONT2
 JMP POSICAO2
 
 OCUPADO2:
-MOV AH, 13h 
+MOV AH, 13h
 MOV BP, OFFSET PE
-MOV BH, 5 
+MOV BH, 5
 MOV BL, 1EH;COR
 MOV CX, 37
 MOV DL, 11

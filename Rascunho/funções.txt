@@ -1,0 +1,93 @@
+MOV AH,0 ; Modo de video
+MOV AL,3
+INT 10h
+____________________________________
+MOV AH,1 ; Muda tamanho do cursor
+MOV CH, ; Linha de início do cursor
+MOV CL, ; Linha de fim do cursor
+INT 10h
+____________________________________
+MOV AH,2 ; Move o cursor (muda posição)
+MOV DL, ; Coluna
+MOV DH, ; Linha
+MOV BH, ; Nº pág
+INT 10h
+_________________________________
+MOV AH,3 ; Pegar posiçâo do cursor
+MOV BH, ; Nº da página
+INT 10h
+;OUTPUT
+;CH - Linha de início do cursor
+;CL - Linha de fim do cursor
+;DH - Linha
+;CL - Coluna
+
+
+_________________________________
+MOV AH,5 ; Selecionar página ativa
+MOV AL,  ; Nº da página (0-7 PARA MODO 3)
+INT 10h
+_________________________________
+__
+MOV AH,6 ; Função scroll up (cls)
+MOV AL,  ; 0= pág toda
+MOV BH,  ; Cor
+MOV CX,  ;  Cima esquerda (usar xor nesse ou abaixo)
+MOV DX,  ; Baixo direita (H = linha / L = coluna)
+INT 10h
+
+
+
+
+
+
+
+
+
+
+___________________________________
+MOV AH, 13h             ;printar string no modo gráfico
+MOV BP, OFFSET 		 ;ponteiro para a posição da string na memória
+MOV BH,                 ; nº da pág
+MOV BL, 	             ;COR
+MOV CX,  				 ; qntd de caracters na string
+MOV DL,					 ; coluna
+MOV DH,					  ;  linha
+INT 10h
+
+____________________________________
+MOV AX,1 ; Usar cursor
+INT 33h
+
+MOV AX,2
+INT 33h
+
+
+
+
+____________________________________
+;MOV AX,9 ; Forma do cursor
+;MOV BX,0Ah
+;MOV CX,0
+;MOV ES,SEG CURSOR ;ES:DX Ponteiro de 16 bits para o cursor
+;MOV DX,OFFSET CURSOR ; Nome da variável da forma do cursor
+;INT 33h
+______________________________________
+
+LERPOS PROC
+LERR:
+MOV AX,5
+INT 33h
+CMP AX,1b
+JNZ LERR
+MOV AX,3
+INT 33h
+RET
+LERPOS ENDP
+
+0 NADA
+1 POSIÇÃO COM NAVIO
+2 ÁGUA
+3 NAVIO ACERTADO
+
+

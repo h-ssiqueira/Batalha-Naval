@@ -52,7 +52,7 @@ TWO5	DB	" _|_|_|_|",0Ah,0Dh,"$"
 	JOCOUNT1 DB (0) ; Contador de jogadas player1
 	JOCOUNT2 DB (0) ; Contador de jogadas player2
 	TABULEIRO1 	DB 36 DUP (0) ;Posicao sem navio vale 0.
-	TABULEIRO2 	DB 36 DUP (0) 
+	TABULEIRO2 	DB 36 DUP (0)
 	J1T1 DB "JOGADOR 1 - TABULEIRO 1", 10, 13, "$"
 	J2T2 DB 10, 13, 10, 13, "JOGADOR 2 - TABULEIRO 2", 10, 13, "$"
 	LC DB 10, 13, "Linha e coluna da posicao: $"
@@ -65,19 +65,19 @@ TWO5	DB	" _|_|_|_|",0Ah,0Dh,"$"
 .CODE
 EXIBET1 PROC
    PUSH SI
-   PUSH BX 
+   PUSH BX
    PUSH CX
    MOV AH,2
    MOV DL,10
    INT 21H
    MOV AH,2
    MOV DL,13
-   INT 21H 
-   
+   INT 21H
+
    XOR SI,SI
    XOR BX,BX
    MOV CH,6
-   
+
    RESETAL1:
    MOV CL,6
    EXIBEL1:
@@ -100,9 +100,9 @@ EXIBET1 PROC
    INT 21H
    MOV AH,2
    MOV DL,13
-   INT 21H   
+   INT 21H
    JNZ RESETAL1
-   
+
    POP CX
    POP BX
    POP SI
@@ -111,20 +111,20 @@ EXIBET1 ENDP
 
 EXIBET2 PROC
    PUSH SI
-   PUSH BX 
+   PUSH BX
    PUSH CX
-   
+
    MOV AH,2
    MOV DL,10
    INT 21H
    MOV AH,2
    MOV DL,13
-   INT 21H 
-   
+   INT 21H
+
    XOR SI,SI
    XOR BX,BX
    MOV CH,6
-   
+
    RESETAL2:
    MOV CL,6
    EXIBEL2:
@@ -147,9 +147,9 @@ EXIBET2 PROC
    INT 21H
    MOV AH,2
    MOV DL,13
-   INT 21H   
+   INT 21H
    JNZ RESETAL2
-   
+
    POP CX
    POP BX
    POP SI
@@ -184,22 +184,22 @@ INT 21H
 LEA DX, L12
 INT 21H
 
-RET 
+RET
 ENDP TITULO
 
  ;Referencia: http://regismain.wikidot.com/assembler
-;MOV AX, 0B800h ;Move o endereço de vídeo para AX 
+;MOV AX, 0B800h ;Move o endereço de vídeo para AX
 ;MOV ES, AX ;Aponta ES para o segmento de vídeo
-;XOR DI, DI ;Zera DI 
+;XOR DI, DI ;Zera DI
 ;MOV CX, 2000 ;Move 2000 (80x25) para CX
-;MOV AH, AH ;Move o atributo para AH 
-;MOV AL, CH ;Move o caracter a usar para AL 
-;REP STOSW ;Faz isso 
+;MOV AH, AH ;Move o atributo para AH
+;MOV AL, CH ;Move o caracter a usar para AL
+;REP STOSW ;Faz isso
 ;RET
 
 PROC LIMPATELA
-MOV AH, 0 
-MOV AL, 3 
+MOV AH, 0
+MOV AL, 3
 INT 10H
 RET
 ENDP LIMPATELA
@@ -214,11 +214,11 @@ MOV DL, 13
 INT 21H
 LOOP P
 RET
-ENDP PULALINHA 
+ENDP PULALINHA
 
 PROC LERTABS
-XOR BX, BX ;MOV BX, 0 
-XOR SI, SI ;MOV SI, 0 
+XOR BX, BX ;MOV BX, 0
+XOR SI, SI ;MOV SI, 0
 
 JMP MSG
 
@@ -245,7 +245,7 @@ SUB BL, 65
 JZ L
 
 MOV DL, BL
-XOR BL, BL ;MOV BL, 0 
+XOR BL, BL ;MOV BL, 0
 
 LINHA:
 ADD BL, 6
@@ -264,7 +264,7 @@ JA ERRO1
 
 SUB AL,49
 JZ PP
-XOR SI, SI ;MOV SI, 0 
+XOR SI, SI ;MOV SI, 0
 MOV DH, AL
 
 COLUNA:
@@ -273,7 +273,7 @@ DEC DH
 JNZ COLUNA
 PP:
 RET
-ENDP LERTABS 
+ENDP LERTABS
 
 
 PROC WIN
@@ -290,7 +290,7 @@ INT 21H
 LEA DX, V5
 INT 21H
 
-RET 
+RET
 ENDP WIN
 
 PROC PLA1
@@ -367,8 +367,8 @@ PROC MAIN
 MOV AX, @DATA
 MOV DS, AX
 
-MOV AH, 0 
-MOV AL, 3 
+MOV AH, 0
+MOV AL, 3
 INT 10H
 
 CALL LIMPATELA
@@ -383,7 +383,7 @@ INICIAR:
 MOV AH, 7
 INT 21H
 CMP AL, 13
-JNE INICIAR 
+JNE INICIAR
 
 COMECOU:
 CALL LIMPATELA
@@ -535,12 +535,3 @@ INT 21H
 ENDP MAIN
 
 END MAIN
-
-
-
-
-
-
-
-
-
