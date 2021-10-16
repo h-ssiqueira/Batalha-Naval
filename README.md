@@ -47,7 +47,7 @@ Inicialmente, é necessário que cada jogador escolha cinco posições nas quais
 <!--![vitória jogador](/imgs/vitoria%20jogador.png)-->
 </p>
 
-## Telas do jogo (Versão 1.5):
+## Telas do jogo (Versão 1.0):
 <p align="center">
 <img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/titulov1.png" alt="início jogador">
 <!--![início](/imgs/titulov1.png)-->
@@ -61,23 +61,12 @@ Inicialmente, é necessário que cada jogador escolha cinco posições nas quais
 <!--![vitória jogador](/imgs/vitoriav1.png)-->
 </p>
 
-## Telas do jogo (Versão 1.0):
-<p align="center">
-<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tela0_5.png" alt="tela">
-<!--![tela](/imgs/tela0_5.png)-->
-</p>
-<p align="center">
-<img src="https://github.com/h-ssiqueira/Batalha-Naval/blob/master/imgs/tabuleiro0_5.png" alt="tabuleiro">
-<!--![tabuleiro](/imgs/tabuleiro0_5.png)-->
-</p>
-
 ## Arquivos
 ### Versões
 Nome | Descrição
 :---: | :---:
 [Batalha Naval 2.0](/src/Version%202_0.asm) | Código fonte da versão final do jogo, com as partes gráficas, porém sem a opção de jogar com o mouse
-[Batalha Naval 1.5](/src/Version%201_5.asm) | Código fonte da primeira versão do jogo, com algumas partes gráficas (letras)
-[Batalha Naval 1.0](/src/Version%201_0.asm) | Código fonte da primeira versão do jogo, sem gráficos
+[Batalha Naval 1.0](/src/Version%201_0.asm) | Código fonte da primeira versão do jogo, com algumas partes gráficas (letras)
 
 ### Rascunho
 Nome | Descrição | Utilidade
@@ -90,7 +79,6 @@ Nome | Descrição | Utilidade
 [cor](/Rascunho/COR.ASM) | Teste para cor de textos | semiútil
 [gráfico](/Rascunho/GRAFIC-1.ASM) | Impressão da posição do cursor na tela | útil
 [quad](/Rascunho/QUAD.ASM) | Teste de limpar a tela | semiútil
-[testbn](/Rascunho/testbn.asm) | Rascunho que não deu certo | inútil
 [TESTE](/Rascunho/TESTE.ASM) | Teste de cor de tela | semiútil
 [TITLE](/Rascunho/TITLE.ASM) | Rascunho para cursor gráfico | semiútil
-[TABULEIRO](/Rascunho/TABULEIRO.ASM) | Arquivo com o rascunho do layout do tabuleiro utilizado no jogo | inútil
+[TABULEIRO](/Rascunho/TABULEIRO.ASM) | Arquivo com o rascunho do layout do tabuleiro utilizado no jogo | semiútil
